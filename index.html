@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Classifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Ceviche+One&family=Lobster+Two:wght@700&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body background="#f7bab2">
+    <div>
+    
+          <H1 style="text-align:center; font-family: 'Ubuntu Condensed', sans-serif;">Sound Classifier</H1> 
+    
+       
+    </div>
+   <center>
+    <h3>Play Different Sounds like Clap,Bell and snap to make the aliens dance.</h3>
+    <h3 style="font-weight:400; color:tomato;">NOTE-Alien 1 dances hearing clap sound; Alien 2 hearing snap sound; Alien 3 hearing bell bell sound and alien 4 hearing background noise.</h3>
+<br>
+
+    <button onclick="startClassification();" class="btn" style="color:white; background-color: #074b73;">Start</button>
+    <h2 id="label" style=" font-family: 'Yantramanav', sans-serif;">I can Hear :<span class="sound_type"></span></h2>
+    <h2 id="accuracy" style=" font-family: 'Yantramanav', sans-serif;">Accuracy :<span class="accuracy"></span></h2>
+
+   </center>
+   <div class="main_dic">
+       <center>
+        <img src="aliens-01.png"id="alien_1">
+        <img src="aliens-02.png"id="alien_2">
+        <img src="aliens-03.png"id="alien_3">
+        <img src="aliens-04.png"id="alien_4">
+       </center>
+    
+
+   </div>
+   <script src="main.js"></script>
+</body>
+</html>

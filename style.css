@@ -1,0 +1,29 @@
+div{
+    width:100%;
+
+}
+body{
+    background-color: #f2cbbf;
+    height:650px;
+}
+h3,h1{
+    color:#e6ac55;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: center;
+}
+h1{
+    font-weight:700;
+}
+h3{
+    font-weight:300;
+}
+button{
+    font-family: 'Cinzel', serif;
+    font-weight:bold;
+
+
+}
+.main_dic img{
+    width:300px;
+    height: 300px;
+}
